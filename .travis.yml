@@ -8,7 +8,8 @@ osx_image: xcode6.4
 
 env:
   matrix:
-    - CONFIG=osx_
+    - CONFIG=osx_postgresql10.4
+    - CONFIG=osx_postgresql9.6
 
   global:
     # The BINSTAR_TOKEN secure variable. This is defined canonically in conda-forge.yml.

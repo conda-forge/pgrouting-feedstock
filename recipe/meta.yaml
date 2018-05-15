@@ -24,15 +24,18 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - cgal
     - cmake
     - perl
     - pkg-config
+    - postgresql
     - postgis
-    - toolchain
   run:
-    - cgal
+    - {{ pin_compatible('cgal', exact=True) }}
     - postgis
+    - postgresql
 
 test:
   commands:
