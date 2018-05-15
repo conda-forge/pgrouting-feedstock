@@ -1,0 +1,17 @@
+c_compiler:
+- toolchain_c
+cgal:
+- '4.11'
+perl:
+- '5.26'
+pin_run_as_build:
+  perl:
+    max_pin: x.x
+  postgis:
+    max_pin: x.x
+  postgresql:
+    max_pin: x.x
+postgis:
+- '2.4'
+postgresql:
+- '10.4'
