@@ -4,7 +4,7 @@ postgis:
   - 2.4
 postgresql:
   - 9.6
-  - 10.3
+  - 10.4
 
 pin_run_as_build:
   postgis:
