@@ -10,12 +10,20 @@ jobs:
   strategy:
     maxParallel: 8
     matrix:
-      linux_postgresql10.4:
-        CONFIG: linux_postgresql10.4
+      linux_postgis2.4postgresql12.1:
+        CONFIG: linux_postgis2.4postgresql12.1
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_postgresql9.6:
-        CONFIG: linux_postgresql9.6
+      linux_postgis2.4postgresql9.6:
+        CONFIG: linux_postgis2.4postgresql9.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_postgis3.0postgresql12.1:
+        CONFIG: linux_postgis3.0postgresql12.1
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_postgis3.0postgresql9.6:
+        CONFIG: linux_postgis3.0postgresql9.6
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
   steps:
