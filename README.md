@@ -29,59 +29,17 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_postgis2.4postgresql12.1</td>
+              <td>linux</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4067&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pgrouting-feedstock?branchName=master&jobName=linux&configuration=linux_postgis2.4postgresql12.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pgrouting-feedstock?branchName=master&jobName=linux&configuration=linux_" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_postgis2.4postgresql9.6</td>
+              <td>osx</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4067&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pgrouting-feedstock?branchName=master&jobName=linux&configuration=linux_postgis2.4postgresql9.6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_postgis3.0postgresql12.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4067&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pgrouting-feedstock?branchName=master&jobName=linux&configuration=linux_postgis3.0postgresql12.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_postgis3.0postgresql9.6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4067&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pgrouting-feedstock?branchName=master&jobName=linux&configuration=linux_postgis3.0postgresql9.6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_postgis2.4postgresql12.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4067&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pgrouting-feedstock?branchName=master&jobName=osx&configuration=osx_postgis2.4postgresql12.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_postgis2.4postgresql9.6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4067&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pgrouting-feedstock?branchName=master&jobName=osx&configuration=osx_postgis2.4postgresql9.6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_postgis3.0postgresql12.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4067&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pgrouting-feedstock?branchName=master&jobName=osx&configuration=osx_postgis3.0postgresql12.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_postgis3.0postgresql9.6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4067&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pgrouting-feedstock?branchName=master&jobName=osx&configuration=osx_postgis3.0postgresql9.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pgrouting-feedstock?branchName=master&jobName=osx&configuration=osx_" alt="variant">
                 </a>
               </td>
             </tr>

@@ -2,8 +2,6 @@ c_compiler:
 - gcc
 c_compiler_version:
 - '7'
-cgal:
-- '4.14'
 channel_sources:
 - conda-forge,defaults
 channel_targets:
@@ -14,16 +12,12 @@ cxx_compiler_version:
 - '7'
 docker_image:
 - condaforge/linux-anvil-comp7
+gmp:
+- '6'
 perl:
 - 5.26.2
 pin_run_as_build:
+  gmp:
+    max_pin: x
   perl:
     max_pin: x.x.x
-  postgis:
-    max_pin: x.x
-  postgresql:
-    max_pin: x.x
-postgis:
-- '3.0'
-postgresql:
-- '9.6'

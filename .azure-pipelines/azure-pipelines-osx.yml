@@ -10,17 +10,8 @@ jobs:
   strategy:
     maxParallel: 8
     matrix:
-      osx_postgis2.4postgresql12.1:
-        CONFIG: osx_postgis2.4postgresql12.1
-        UPLOAD_PACKAGES: True
-      osx_postgis2.4postgresql9.6:
-        CONFIG: osx_postgis2.4postgresql9.6
-        UPLOAD_PACKAGES: True
-      osx_postgis3.0postgresql12.1:
-        CONFIG: osx_postgis3.0postgresql12.1
-        UPLOAD_PACKAGES: True
-      osx_postgis3.0postgresql9.6:
-        CONFIG: osx_postgis3.0postgresql9.6
+      osx_:
+        CONFIG: osx_
         UPLOAD_PACKAGES: True
 
   steps:
