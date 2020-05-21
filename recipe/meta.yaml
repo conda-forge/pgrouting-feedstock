@@ -1,6 +1,6 @@
 {% set name = "pgrouting" %}
-{% set version = "2.6.0" %}
-{% set sha256 = "9d12c0ea5f0fe9fef5b20e455ee07fc402736ecf6b6f69098df2e18db828e502" %}
+{% set version = "3.0.0" %}
+{% set sha256 = "eecb6a634b7bfdba0640518053a514330d468d214a8225548917fbce8a41745f" %}
 
 package:
   name: {{ name|lower }}
@@ -13,13 +13,13 @@ source:
 
 build:
   number: 0
-  script: 
+  script:
     - mkdir build
     - cd build
     - cmake ..
     - make
     - make install
-  skip: True  # [win]
+  skip: true  # [win]
 
 
 requirements:
@@ -47,7 +47,7 @@ about:
   license: GPL-2.0
   license_family: GPL
   license_file: LICENSE
-  summary: 'pgRouting extends PostGIS/PostgreSQL geospatial database to provide geospatial routing and other network analysis functionality.'
+  summary: pgRouting extends PostGIS/PostgreSQL geospatial database to provide geospatial routing and other network analysis functionality.
 
   doc_url: https://docs.pgrouting.org
   dev_url: https://github.com/pgrouting/pgrouting
