@@ -1,6 +1,6 @@
 {% set name = "pgrouting" %}
-{% set version = "2.6.0" %}
-{% set sha256 = "9d12c0ea5f0fe9fef5b20e455ee07fc402736ecf6b6f69098df2e18db828e502" %}
+{% set version = "2.6.3" %}
+{% set sha256 = "7ebef19dc698d4e85b85274f6949e77b26fe5a2b79335589bc3fbdfca977eb0f" %}
 
 package:
   name: {{ name|lower }}
