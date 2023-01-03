@@ -1,10 +1,10 @@
 cgal:
   - 4.11 
 postgis:
-  - 2.4
+  - 3.3.2
 postgresql:
-  - 9.6
-  - 10.4
+  - 15.1
+  - 14.5
 
 pin_run_as_build:
   postgis:
