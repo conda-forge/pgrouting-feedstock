@@ -39,11 +39,6 @@ requirements:
     - postgis
     - postgresql
 
-test:
-  commands:
-    # These are not needed, tests are run in run_test.sh
-    - true
-
 about:
   home: http://github.com/pgrouting/pgrouting
   license: GPL-2.0
