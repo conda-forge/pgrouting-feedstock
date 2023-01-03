@@ -1,5 +1,5 @@
 cgal:
-  - 4.11 
+  - 5.4
 postgis:
   - 3.3.2
 postgresql:
