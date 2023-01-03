@@ -28,6 +28,7 @@ requirements:
   host:
     - cgal
     - cmake
+    - make
     - perl
     - pkg-config
     - postgresql
