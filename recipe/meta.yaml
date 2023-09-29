@@ -7,18 +7,16 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/pgrouting/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: fb0d9ef3247a95166e172412734fda9746233912601a4891cbcf02fe87764140
 
 build:
-  number: 0
+  number: 1
   script:
     - mkdir build
     - cd build
-    - cmake ..
-    - make
-    - make install
+    - cmake -GNinja ..
+    - ninja install
   skip: true  # [win]
 
 
@@ -29,7 +27,7 @@ requirements:
   host:
     - cgal
     - cmake
-    - make
+    - ninja
     - perl
     - pkg-config
     - postgresql
