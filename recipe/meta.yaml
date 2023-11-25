@@ -9,6 +9,8 @@ package:
 source:
   url: https://github.com/pgrouting/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: 16b838685b9384e84da03b4ac391b50b930d934c5b2c4b7406f3472183ad0c79
+  patches:
+    - 001_size_t.patch
 
 build:
   number: 0

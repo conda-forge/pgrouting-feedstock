@@ -1,0 +1,50 @@
+From 0a55e30077c94c458f0a04d24f3b1b58bc288771 Mon Sep 17 00:00:00 2001
+From: Paul Ramsey <pramsey@cleverelephant.ca>
+Date: Fri, 24 Nov 2023 14:26:57 -0800
+Subject: [PATCH] MacOS issues with size_t, closes GH-2588
+
+---
+ include/c_types/restriction_t.h       | 2 +-
+ include/cpp_common/get_check_data.hpp | 2 +-
+ src/cpp_common/get_check_data.cpp     | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/include/c_types/restriction_t.h b/include/c_types/restriction_t.h
+index 516a6c8245..a27a77ace8 100644
+--- a/include/c_types/restriction_t.h
++++ b/include/c_types/restriction_t.h
+@@ -40,7 +40,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ struct Restriction_t {
+     double cost;
+     int64_t * via;
+-    uint64_t via_size;
++    size_t via_size;
+ };
+ 
+ #endif  // INCLUDE_C_TYPES_RESTRICTION_T_H_
+diff --git a/include/cpp_common/get_check_data.hpp b/include/cpp_common/get_check_data.hpp
+index 8a277b74b8..8e06ce4ca6 100644
+--- a/include/cpp_common/get_check_data.hpp
++++ b/include/cpp_common/get_check_data.hpp
+@@ -59,7 +59,7 @@ char getChar(const HeapTuple, const TupleDesc&, const Column_info_t&, bool, char
+ int64_t* get_array(ArrayType*, size_t*, bool);
+ 
+ /** @brief Function returns the values of specified columns in array. */
+-int64_t* getBigIntArr(const HeapTuple, const TupleDesc&, const Column_info_t&, uint64_t*);
++int64_t* getBigIntArr(const HeapTuple, const TupleDesc&, const Column_info_t&, size_t*);
+ 
+ /** @brief Function returns the value of specified column in integer type.  */
+ int64_t getBigInt(const HeapTuple, const TupleDesc&, const Column_info_t&);
+diff --git a/src/cpp_common/get_check_data.cpp b/src/cpp_common/get_check_data.cpp
+index c3866d6dae..7ae0500b73 100644
+--- a/src/cpp_common/get_check_data.cpp
++++ b/src/cpp_common/get_check_data.cpp
+@@ -354,7 +354,7 @@ int64_t* getBigIntArr(
+         const HeapTuple tuple,
+         const TupleDesc &tupdesc,
+         const Column_info_t &info,
+-        uint64_t *the_size) {
++        size_t *the_size) {
+     bool is_null = false;
+ 
+     Datum raw_array = SPI_getbinval(tuple, tupdesc, info.colNumber, &is_null);
