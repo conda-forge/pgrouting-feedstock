@@ -17,7 +17,8 @@ build:
     - cd build
     - cmake -GNinja ..
     - ninja install
-  skip: true  # [win]
+  # osx build disabled due to issue GH18
+  skip: true  # [win or osx]
 
 
 requirements:
