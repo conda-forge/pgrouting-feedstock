@@ -11,7 +11,7 @@ source:
   sha256: f4a1ed79d6f714e52548eca3bb8e5593c6745f1bde92eb5fb858efd8984dffa2
 
 build:
-  number: 0
+  number: 1
   script:
     - mkdir build
     - cd build
@@ -24,6 +24,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - cgal
