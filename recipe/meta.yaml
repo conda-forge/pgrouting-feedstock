@@ -1,5 +1,5 @@
 {% set name = "pgrouting" %}
-{% set version = "3.7.1" %}
+{% set version = "3.7.2" %}
 {% set sha256 = "fb0d9ef3247a95166e172412734fda9746233912601a4891cbcf02fe87764140" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/pgrouting/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 2ff432d392fa05784a1d0fe7d01cf4c1f474cdd4a0b7081fb69269970948c6b6
+  sha256: 953e3368b172fe81881128a6ec078f6b31cf52196b773dfc05df4237bb9c5e26
 
 build:
   number: 0
