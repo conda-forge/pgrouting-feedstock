@@ -11,7 +11,7 @@ source:
   sha256: b8a5f0472934fdf7cda3fb4754d01945378d920cdaddc01f378617ddbb9c447f
 
 build:
-  number: 0
+  number: 1
   script:
     - mkdir build
     - cd build
