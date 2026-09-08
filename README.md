@@ -5,13 +5,13 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pgrouting-feeds
 
 Home: http://github.com/pgrouting/pgrouting
 
-Package license: GPL-2.0
+Package license: GPL-2.0-only
 
 Summary: pgRouting extends PostGIS/PostgreSQL geospatial database to provide geospatial routing and other network analysis functionality.
 
 Development: https://github.com/pgrouting/pgrouting
 
-Documentation: https://docs.pgrouting.org
+Documentation: https://docs.pgrouting.org/
 
 Current build status
 ====================
