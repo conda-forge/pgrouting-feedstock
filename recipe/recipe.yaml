@@ -1,0 +1,55 @@
+schema_version: 1
+
+context:
+  name: pgrouting
+  version: "4.0.2"
+  sha256: fb0d9ef3247a95166e172412734fda9746233912601a4891cbcf02fe87764140
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://github.com/pgrouting/${{ name }}/archive/v${{ version }}.tar.gz
+  sha256: 2faf31b178db969637c1f392ba3ba18fba8d5aed15bdc73fbb4a53a72c5d0f71
+
+build:
+  # osx build disabled due to issue GH18
+  number: 0
+  skip: win or osx
+  script:
+    - mkdir build
+    - cd build
+    - cmake -GNinja ..
+    - ninja install
+
+requirements:
+  build:
+    - ${{ compiler('c') }}
+    - ${{ stdlib("c") }}
+    - ${{ compiler('cxx') }}
+  host:
+    - cgal
+    - cmake
+    - ninja
+    - perl
+    - pkg-config
+    - postgresql
+    - postgis
+  run:
+    - ${{ pin_compatible('cgal', exact=True) }}
+    - postgis
+    - postgresql
+
+about:
+  license: GPL-2.0-only
+  license_file: LICENSE
+  summary: pgRouting extends PostGIS/PostgreSQL geospatial database to provide geospatial routing and other network analysis functionality.
+  homepage: http://github.com/pgrouting/pgrouting
+  repository: https://github.com/pgrouting/pgrouting
+  documentation: https://docs.pgrouting.org
+
+extra:
+  recipe-maintainers:
+    - akrherz
+    - sodre
