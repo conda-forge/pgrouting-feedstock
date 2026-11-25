@@ -33,13 +33,18 @@ requirements:
     - cmake
     - ninja
     - perl
-    - pkg-config
+    - pkgconf
     - postgresql
     - postgis
   run:
     - ${{ pin_compatible('cgal', exact=True) }}
     - postgis
     - postgresql
+
+tests:
+  - package_contents:
+      lib:
+        - pgrouting-4.0
 
 about:
   license: GPL-2.0-only
